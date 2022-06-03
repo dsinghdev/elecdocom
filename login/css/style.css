@@ -1,0 +1,17 @@
+.center {
+    text-align: center;
+    color: brown;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center-half {
+    width: 500px;
+    margin-left: 300px;
+}
