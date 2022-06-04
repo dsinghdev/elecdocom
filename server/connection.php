@@ -1,7 +1,7 @@
 <?php
-    $hostName = "localhost";
-    $userName = "root";
-    $password = "";
+    // $hostName = "localhost";
+    // $userName = "root";
+    // $password = "";
     $databaseName = "propsal_management_system";
     $conn = new mysqli($hostName, $userName, $password, $databaseName);
     if ($conn->connect_error) {
