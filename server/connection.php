@@ -1,5 +1,5 @@
 <?php
-    $hostName = "https://d4man.github.io/elecdocon/";
+    $hostName = "localhost";
     $userName = "root";
     $password = "";
     $databaseName = "propsal_management_system";
