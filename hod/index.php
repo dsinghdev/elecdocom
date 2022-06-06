@@ -18,9 +18,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="#" class="logo">
-      <img src="https://bit.ly/3dXyYWo" alt="Logo" class="logoimg">
-      </a>
     <div class="container container-fluid">
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo">
