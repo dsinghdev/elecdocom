@@ -18,9 +18,7 @@
             <img src="img/elecdocom.png" alt="logo">
             <h1 class="center">STUDENT Register</h1>
         </div>
-        <div>
-            <img src="img/elecdocom.png" alt="logo">
-        </div>
+       
         <nav>
             <span class="right">Authority?<a href="./hod_login.php">Sign in</a></span>
         </nav>
