@@ -69,7 +69,7 @@
                 if($rows >= 1){
                     while($data = $result->fetch_assoc()){
                         $title = $data['project_TITLE'];
-                        $year = $data['project_YEAR'];
+                        $pdate = $data['project_date'];
                         $hodID = $data['hod_ID'];
                         $professor = $data['project_PROFESSOR'];
                         $status = $data['project_STATUS'];
@@ -79,7 +79,7 @@
                         echo"
                         <tr>
                             <td>${title}</td>
-                            <td>${year}</td>
+                            <td>${pdate}</td>
                         ";
                         $hodNAME = '';
                         $sql1 = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";

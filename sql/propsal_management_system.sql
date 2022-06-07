@@ -41,7 +41,7 @@ CREATE TABLE `hod_record` (
 --
 
 INSERT INTO `hod_record` (`hod_ID`, `hod_FIRST_NAME`, `hod_LAST_NAME`, `hod_EMAIL`, `hod_DEPT`, `hod_PASSWORD`) VALUES
-(1, 'Dinesh', 'Gupta', 'dgupta@hod.com', 'Computer Science', '12345');
+(1, 'Umair', 'Jibran', 'umair@hod.com', 'Computer Science', 'umair98');
 
 -- --------------------------------------------------------
 
@@ -81,7 +81,7 @@ CREATE TABLE `project_record` (
   `student_ID` int(11) NOT NULL,
   `hod_ID` int(11) NOT NULL,
   `project_TITLE` varchar(50) NOT NULL,
-  `project_YEAR` int(11) NOT NULL,
+  `project_date` date NOT NULL,
   `project_PROFESSOR` varchar(50) DEFAULT NULL,
   `project_BATCH` int(11) NOT NULL,
   `project_COURSE` varchar(50) NOT NULL,
@@ -94,12 +94,8 @@ CREATE TABLE `project_record` (
 -- Dumping data for table `project_record`
 --
 
-INSERT INTO `project_record` (`project_ID`, `student_ID`, `hod_ID`, `project_TITLE`, `project_YEAR`, `project_PROFESSOR`, `project_BATCH`, `project_COURSE`, `project_COMMENT`, `project_STATUS`, `project_file`) VALUES
-(1, 1, 1, 'Schliderz', 2008, 'Zakir Afridi', 2, 'UX/UI', 'Start Working ASAP!', 1, '../server/uploads/5ef49bef588fb4.50332890.pdf'),
-(2, 2, 1, 'Schliderz', 2004, NULL, 4, 'WEB Designing', NULL, 0, '../server/uploads/5ef4aaeb05b1d8.50883162.pdf'),
-(3, 1, 1, 'Cats and Canine Rental', 2020, ' Shahab Haidar', 2, 'WEB Designing', 'Please Consult with the teacher', 1, '../server/uploads/5ef72c15cc6421.72974177.pdf'),
-(4, 1, 1, 'GSoC Mentee', 2020, NULL, 4, 'Computer Science', NULL, 0, '../server/uploads/5ef72e0b67da38.00680014.pdf'),
-(5, 1, 1, 'Online Project Proposal', 2020, ' ', 3, 'Computer Science', ' ', 2, '../server/uploads/5ef73832382d16.62240900.pdf');
+INSERT INTO `project_record` (`project_ID`, `student_ID`, `hod_ID`, `project_TITLE`, `project_date`, `project_PROFESSOR`, `project_BATCH`, `project_COURSE`, `project_COMMENT`, `project_STATUS`, `project_file`) VALUES
+(5, 1, 1, 'Online Project Proposal', 11-11-2020, ' ', 3, 'Computer Science', ' ', 2, '../server/uploads/5ef73832382d16.62240900.pdf');
 
 -- --------------------------------------------------------
 
@@ -148,8 +144,8 @@ CREATE TABLE `student_record` (
 --
 
 INSERT INTO `student_record` (`student_ID`, `student_EMAIL`, `student_FIRST_NAME`, `student_LAST_NAME`, `student_PASSWORD`, `status`) VALUES
-(1, 'd4man16@gmail.com', 'damanjot', 'singh', '12345', 1),
-(2, 'damandeep@gmail.com', 'damandeep', 'singh', '12345', 1);
+(1, 'umairjibran7@gmail.com', 'Umair', 'Jibran', '123456', 1),
+(2, 'umairjibran@gmail.com', 'Umair', 'Jibran', '123456', 1);
 
 --
 -- Indexes for dumped tables

@@ -24,7 +24,9 @@
             <h2 class="center">
                 Authority Dashboard
             </h2>
-  
+  <div>
+      <img src="img/elecdocom.png" alt="logo">
+    </div>
             <small class="right">Welcome <?php echo $hodNAME?> </small>
         </div>
 
@@ -90,7 +92,7 @@
                     while($data = $result->fetch_assoc()){
                         $prID = $data['project_ID'];
                         $title = $data['project_TITLE'];
-                        $year = $data['project_YEAR'];
+                        $pdate = $data['project_date'];
                         $hodID = $data['hod_ID'];
                         $stdID = $data['student_ID'];
                         $professor = $data['project_PROFESSOR'];
@@ -103,7 +105,7 @@
                         <tr>
                             <td>${title}</td> 
                             <td> <a href = ${file} class='btn btn-info' download>Download</a></td>";
-                            echo"<td>${year}</td>";
+                            echo"<td>${pdate}</td>";
                         ?>
                         <form action="#" method="post">
                         <?php
