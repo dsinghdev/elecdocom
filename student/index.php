@@ -22,9 +22,7 @@
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo">
             <h3 class='center'>Student Dashboard
-            <div>
-      
-    </div>
+           
             </h3>
             <small class="right"><?php echo "Welcome " . $studentName ?></small>
         </div>
