@@ -123,7 +123,10 @@
                                 <td>${course}</td>
                                 <td>${batch}</td>
                                 <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>
-                                <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
+                                <td><input type='submit' name='update${prID}' class='btn btn-primary' onclick="this.disabled='disabled';"></td>"; 
+                                
+                              
+                                
                                 ?>
                                 </form>
                                 <?php
