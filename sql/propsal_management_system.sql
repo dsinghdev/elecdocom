@@ -41,7 +41,7 @@ CREATE TABLE `hod_record` (
 --
 
 INSERT INTO `hod_record` (`hod_ID`, `hod_FIRST_NAME`, `hod_LAST_NAME`, `hod_EMAIL`, `hod_DEPT`, `hod_PASSWORD`) VALUES
-(1, 'Umair', 'Jibran', 'umair@hod.com', 'Computer Science', 'umair98');
+(1, 'Dinesh', 'Gupta', 'dinesh@hod.com', 'Computer Science', '1234');
 
 -- --------------------------------------------------------
 
@@ -144,8 +144,8 @@ CREATE TABLE `student_record` (
 --
 
 INSERT INTO `student_record` (`student_ID`, `student_EMAIL`, `student_FIRST_NAME`, `student_LAST_NAME`, `student_PASSWORD`, `status`) VALUES
-(1, 'umairjibran7@gmail.com', 'Umair', 'Jibran', '123456', 1),
-(2, 'umairjibran@gmail.com', 'Umair', 'Jibran', '123456', 1);
+(1, 'daman42a@gmail.com', 'Damanjot', 'Singh, '1234', 1),
+(2, 'Rahulpreet493@gmail.com', 'Rahulpreet', 'Singh', '1234',2);
 
 --
 -- Indexes for dumped tables
