@@ -144,8 +144,8 @@ CREATE TABLE `student_record` (
 --
 
 INSERT INTO `student_record` (`student_ID`, `student_EMAIL`, `student_FIRST_NAME`, `student_LAST_NAME`, `student_PASSWORD`, `status`) VALUES
-(1, 'daman42a@gmail.com', 'Damanjot', 'Singh, '1234', 1),
-(2, 'Rahulpreet493@gmail.com', 'Rahulpreet', 'Singh', '1234',2);
+(1, 'Rahul@gmail.com', 'Damanjot Singh', 'Jibran', '123456', 1),
+(2, 'umairjibran@gmail.com', 'Umair', 'Jibran', '123456', 1);
 
 --
 -- Indexes for dumped tables
