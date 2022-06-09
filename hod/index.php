@@ -24,7 +24,9 @@
             <h2 class="center">
                 Authority Dashboard
             </h2>
-  
+  <div>
+      <img src="img/elecdocom.png" alt="logo">
+    </div>
             <small class="right">Welcome <?php echo $hodNAME?> </small>
         </div>
 
@@ -115,13 +117,14 @@
                                 <option value='1'>ACCEPT</option>
                                 <option value='2'>REJECT</option>
                             </select></td>
-                            <td><input type='text' name='comment${prID}'  placeholder='Leave Remarks' value='${comment}' required></td>
+                            <td><input type='text' name='comment${prID}'  placeholder='Leave Re
+                            marks' value='${comment}' required></td>
                             ";
                             echo"
                                 <td>${course}</td>
                                 <td>${batch}</td>
                                 <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>
-                                <td><input type='submit' name='update${prID}' class='btn btn-primary' onclick="this.disabled='disabled';"></td>"; 
+                                <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>"; 
                                 
                               
                                 
