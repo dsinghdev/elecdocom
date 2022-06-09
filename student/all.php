@@ -35,7 +35,7 @@
             <tr>
                 <th>Proposal title</th>
                 <th>Proposal date</th>
-                <th>HOD</th>
+                <th>Authority</th>
                 <th>Professor(assigned)</th>
                 <th>Status</th>
                 <th>Remarks</th>
