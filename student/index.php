@@ -52,7 +52,7 @@
             <tr>
                 <th>Proposal title</th>
                 <th>Proposal date</th>
-                <th>HOD</th>
+                <th>Authority</th>
                 <th>Incharge assigned</th>
                 <th>Proposal Status</th>
                 <th>Proposal comments</th>
