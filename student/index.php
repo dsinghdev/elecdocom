@@ -53,7 +53,7 @@
                 <th>Proposal title</th>
                 <th>Proposal date</th>
                 <th>Authority</th>
-                <th>Incharge assigned</th>
+                <th>Faculty assigned(If any)</th>
                 <th>Proposal Status</th>
                 <th>Proposal comments</th>
                 <th>Proposal field</th>
