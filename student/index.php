@@ -24,7 +24,7 @@
             <h3 class='center'>Student Dashboard
            
             </h3>
-            <small class="right"><?php echo "Welcome " . $studentName ?></small>
+            <small class="right"><b><?php echo "Welcome " . $studentName ?></b></small>
         </div>
         <nav class="right">
             <form action="#" method="post">
