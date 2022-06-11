@@ -20,10 +20,10 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo"> <br><br><br>
-            <h1 class="center">
+            <img src="img/elecdocom.png" alt="logo">
+            <h2 class="center">
                 Authority Dashboard
-            </h1>
+            </h2>
   <!-- <div>
       <img src="img/elecdocom.png" alt="logo">
     </div> -->
@@ -33,13 +33,13 @@
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
         <br><br><br>
         <table class="table">
+        <caption class='center'>Approve Students</caption>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Approve?</th>
             </tr>
-            <caption class='center'><h3>Approve Students</h3></caption>
 
             <?php
                 $sql = "SELECT * FROM `student_record` WHERE `status` = 0";
@@ -71,8 +71,8 @@
                 }
             ?>
         </table>
-        <caption  class='center'><h3>Approve Projects</h3></caption>
         <table class="table">
+        <caption  class='center'>Approve Projects</caption>
             <tr>
                 <th>Proposal title</th>
                 <th>Proposal document</th>
