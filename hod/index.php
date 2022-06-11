@@ -21,9 +21,9 @@
     <div class="container container-fluid">
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo">
-            <h1 class="center">
+            <h5 class="center">
                 Authority Dashboard
-            </h1>
+            </h5>
   <!-- <div>
       <img src="img/elecdocom.png" alt="logo">
     </div> -->
@@ -31,7 +31,7 @@
         </div>
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
-        <!-- <br><br><br> -->
+        <br><br><br>
         <table class="table">
         <caption class='center'><h3>Approve Students</h3></caption>
             <tr>
