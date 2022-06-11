@@ -117,8 +117,7 @@
                                 <option value='1'>ACCEPT</option>
                                 <option value='2'>REJECT</option>
                             </select></td>
-                            <td><input type='text' name='comment${prID}'  placeholder='Leave Re
-                            marks' value='${comment}' required></td>
+                            <td><input type='text' name='comment${prID}'  placeholder='LeaveRemarks' value='${comment}' required></td>
                             ";
                             echo"
                                 <td>${course}</td>
