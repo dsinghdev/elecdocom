@@ -33,7 +33,7 @@
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
         <br><br><br>
         <table class="table">
-        <caption class='center'>Approve Students</caption>
+        <caption class='center'><b>Approve Students</b></caption>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -72,8 +72,8 @@
             ?>
         </table>
         <table class="table">
-        <caption  class='center'>Approve Projects</caption>
-            <tr><p><font> color='red'
+        <caption  class='center'><b>Approve Projects</b></caption>
+            <tr>
                 <th>Proposal title</th>
                 <th>Proposal document</th>
                 <th>Proposal date</th>
@@ -82,7 +82,7 @@
                 <th>Remarks</th>
                 <th>Student branch</th>
                 <th>Student semester</th>
-                <th>Action</th></font></p>
+                <th>Action</th>
             </tr>
             <?php
                 $sql = "SELECT * FROM `project_record` WHERE `hod_ID` = '${hodID}';";
