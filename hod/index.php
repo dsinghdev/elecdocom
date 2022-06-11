@@ -73,7 +73,7 @@
         </table>
         <table class="table">
         <caption  class='center'>Approve Projects</caption>
-            <tr>
+            <tr><p><font> color='red'
                 <th>Proposal title</th>
                 <th>Proposal document</th>
                 <th>Proposal date</th>
@@ -82,7 +82,7 @@
                 <th>Remarks</th>
                 <th>Student branch</th>
                 <th>Student semester</th>
-                <th>Action</th>
+                <th>Action</th></font></p>
             </tr>
             <?php
                 $sql = "SELECT * FROM `project_record` WHERE `hod_ID` = '${hodID}';";
