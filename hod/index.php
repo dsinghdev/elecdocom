@@ -71,7 +71,7 @@
                 }
             ?>
         </table>
-        <caption  class='center'><h3>Approve Projects</h3></caption>
+                <font color='red'><caption  class='center'><h3>Approve Projects</h3></caption></font>
         <table class="table">
             <tr>
                 <th>Proposal title</th>
