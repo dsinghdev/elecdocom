@@ -32,7 +32,6 @@
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
         <br><br><br>
-        <hr>
         <caption class='center'><h3>Approve Students</h3></caption>
         <table class="table">
             <tr>
@@ -40,7 +39,8 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Approve?</th>
-            </tr
+            </tr>
+            hr
 
             <?php
                 $sql = "SELECT * FROM `student_record` WHERE `status` = 0";
@@ -72,7 +72,7 @@
                 }
             ?>
         </table>
-        <caption  class='centre'><h3>Approve Projects</h3></caption>
+        <caption  class='center'><h3>Approve Projects</h3></caption>
         <table class="table">
             <tr>
                 <th>Proposal title</th>
