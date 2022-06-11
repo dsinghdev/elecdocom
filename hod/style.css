@@ -1,10 +1,11 @@
-.center {
+.centre {
     text-align: center;
     color: brown;
 }
 
 .right {
     float: right;
+    color: brown;
 }
 
 .left {
