@@ -40,6 +40,7 @@
                 <th>Email</th>
                 <th>Approve?</th>
             </tr>
+            <hr>
 
             <?php
                 $sql = "SELECT * FROM `student_record` WHERE `status` = 0";
