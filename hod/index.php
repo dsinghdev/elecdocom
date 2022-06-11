@@ -117,7 +117,7 @@
                                 <option value='1'>ACCEPT</option>
                                 <option value='2'>REJECT</option>
                             </select></td>
-                            <td><input type='text' name='comment${prID}'  placeholder='LeaveRemarks' value='${comment}' required></td>
+                            <td><input type='text' name='comment${prID}'  placeholder='Leave Remarks' value='${comment}' required></td>
                             ";
                             echo"
                                 <td>${course}</td>
@@ -125,7 +125,7 @@
                                 <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>";
                             if($status==1&&2){
                                 echo $status;
-                                echo "<td><b>SUBMITTED</b></td>";  
+                                echo "<td><b><p style="color :red;">SUBMITTED</p></b></td>";  
                                }
                             else{
                                 echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
