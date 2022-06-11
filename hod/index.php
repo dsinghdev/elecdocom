@@ -32,15 +32,14 @@
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
         <br><br><br>
-        <caption class='center'><h3>Approve Students</h3></caption>
+        <caption class='center'><h3>Approve Students</h3></caption> <hr>
         <table class="table">
             <tr>
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Approve?</th>
-            </tr>
-            <hr>
+            </tr
 
             <?php
                 $sql = "SELECT * FROM `student_record` WHERE `status` = 0";
