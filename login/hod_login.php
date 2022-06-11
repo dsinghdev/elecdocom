@@ -16,7 +16,7 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
+            <img src="img/elecdocom.png" alt="logo"> <br><br><br>
             <h1 class="center">AUTHORITY LOGIN</h1>
             
         </div>
