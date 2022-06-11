@@ -117,21 +117,15 @@
                                 <option value='1'>ACCEPT</option>
                                 <option value='2'>REJECT</option>
                             </select></td>
-                            <td><input type='text' name='comment${prID}'  placeholder='Leave Remarks' value='${comment}' required></td>
+                            <td><input type='text' name='comment${prID}' placeholder='Leave Remarks' value='${comment}' required></td>
                             ";
                             echo"
                                 <td>${course}</td>
                                 <td>${batch}</td>
-                                <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>";
-                            if($status==1&&2){
-                                echo $status;
-                                echo "<td><b><p><font color='green'>SUBMITTED</font></p></b></td>";  
+                                <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>
+                                <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
+
                                 
-                               }
-                            else{
-                                echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
-                               
-                            }                                
                               
                                 
                                 ?>
