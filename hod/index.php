@@ -125,7 +125,8 @@
                                 <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>";
                             if($status==1&&2){
                                 echo $status;
-                                echo "<td><b><p style="color :red;">SUBMITTED</p></b></td>";  
+                                echo "<td><b><p>SUBMITTED</p></b></td>";  
+                                
                                }
                             else{
                                 echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
