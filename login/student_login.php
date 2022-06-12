@@ -21,7 +21,7 @@
             
         </div>
         <nav>
-            <span class="right"><a href="./hod_login.php"> Authority Login </a></span>
+            <span class="right"><h5><a href="./hod_login.php"> Authority Login </a></h5></span>
         </nav>
         <br><br>
         <div class="center-half">
