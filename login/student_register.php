@@ -20,7 +20,7 @@
         </div>
        
         <nav>
-            <span class="right"><a href="./hod_login.php"> Authority Sign In</a></span>
+            <span class="right"><h5><a href="./hod_login.php"> Authority Sign In</a></h5></span>
         </nav>
         <br><br>
         <div class="center-half">
