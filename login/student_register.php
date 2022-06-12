@@ -15,30 +15,30 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
-            <h1 class="center">STUDENT Register</h1>
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class="center">STUDENT REGISTRATION</h1>
         </div>
        
         <nav>
-            <span class="right">Authority?<a href="./hod_login.php">Sign in</a></span>
+            <span class="right"><a href="./hod_login.php"> Authority Sign In</a></span>
         </nav>
         <br><br>
         <div class="center-half">
             <form method="post" action="#">
                 <div class="form-group">
-                    <label for="studentFName" class="left">Student First Name</label>
+                    <label for="studentFName" class="left"><b>Student First Name</b></label>
                     <input type="text" name="studentFName" class="form-control" id="studentFName" required>
                 </div>
                 <div class="form-group">
-                    <label for="studentLName" class="left">Student Last Name</label>
+                    <label for="studentLName" class="left"><b>Student Last Name</b></label>
                     <input type="text" name="studentLName" class="form-control" id="studentLName" required>
                 </div>
                 <div class="form-group">
-                    <label for="studentEmail" class="left">Student Email</label>
+                    <label for="studentEmail" class="left"><b>Student Email</b></label>
                     <input type="email" name="studentEmail" class="form-control" id="studentEmail" required>
                 </div>
                 <div class="form-group">
-                    <label for="pwd" class="left">Password</label>
+                    <label for="pwd" class="left"><b>Password</b></label>
                     <input type="password" name="pwd" class="form-control" id="pwd" required>
                 </div>
                 <div class="left">
