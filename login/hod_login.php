@@ -27,7 +27,7 @@
         <div class="center-half">
             <form method="POST" action="#">
                 <div class="form-group">
-                    <label for="hodID" class="left"><h5>Authority ID,</h5></label>
+                    <label for="hodID" class="left"><h5>Authority ID</h5></label>
                     <input type="number" name="hodID" class="form-control" id="hodID" required>
                 </div>
                 <div class="form-group">
@@ -35,7 +35,7 @@
                     <input type="password" name="pwd" class="form-control" id="pwd" required>
                 </div>
                 <div class="right">
-                    <input type="submit" name="login" value="Login" class="btn btn-outline-primary">
+                    <input type="submit" name="<b>login</b>" value="Login" class="btn btn-outline-primary">
                 </div>
             </form>
         </div>
