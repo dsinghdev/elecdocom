@@ -21,7 +21,7 @@
             
         </div>
         <nav>
-            <span class="right"><h5>If you are a student then login <a href="./student_login.php"> <b>HERE</b></h5></a></span>
+            <span class="right"><h5><a href="./student_login.php">Student Login</h5></a></span>
         </nav>
         <br><br>
         <div class="center-half">
@@ -35,7 +35,7 @@
                     <input type="password" name="pwd" class="form-control" id="pwd" required>
                 </div>
                 <div class="right">
-                    <input type="submit" name="<b>login</b>" value="Login" class="btn btn-outline-primary">
+                    <input type="submit" name="login" value="Login" class="btn btn-outline-primary">
                 </div>
             </form>
         </div>
