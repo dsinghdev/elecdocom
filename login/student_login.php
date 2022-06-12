@@ -16,22 +16,22 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
+            <img src="img/elecdocom.png" alt="logo"> <br><br><br>
             <h1 class="center">STUDENT LOGIN</h1>
             
         </div>
         <nav>
-            <span class="right">If you are authority then sign in<a href="./hod_login.php"> here. </a></span>
+            <span class="right"><a href="./hod_login.php"> Authority Login </a></span>
         </nav>
         <br><br>
         <div class="center-half">
             <form method="POST" action="#">
                 <div class="form-group">
-                    <label for="studentID" class="left">Student ID</label>
+                    <label for="studentID" class="left"><b>Student ID</b></label>
                     <input type="number" name="studentID" class="form-control" id="studentID" required>
                 </div>
                 <div class="form-group">
-                    <label for="pwd" class="left">Password</label>
+                    <label for="pwd" class="left"><b>Password</b></label>
                     <input type="password" name="pwd" class="form-control" id="pwd" required>
                 </div>
                 <div class="left">
