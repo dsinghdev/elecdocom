@@ -21,17 +21,17 @@
             
         </div>
         <nav>
-            <span class="right"><h4>If you are a student then login <a href="./student_login.php"> <b>HERE</b></h4></a></span>
+            <span class="right"><h5>If you are a student then login <a href="./student_login.php"> <b>HERE</b></h5></a></span>
         </nav>
         <br><br>
         <div class="center-half">
             <form method="POST" action="#">
                 <div class="form-group">
-                    <label for="hodID" class="left">Authority ID</label>
+                    <label for="hodID" class="left"><h5>Authority ID,</h5></label>
                     <input type="number" name="hodID" class="form-control" id="hodID" required>
                 </div>
                 <div class="form-group">
-                    <label for="pwd" class="left">Password</label>
+                    <label for="pwd" class="left"><h5>Password</h5></label>
                     <input type="password" name="pwd" class="form-control" id="pwd" required>
                 </div>
                 <div class="right">
