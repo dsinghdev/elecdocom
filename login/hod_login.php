@@ -21,7 +21,7 @@
             
         </div>
         <nav>
-            <span class="right">If you are a student then login <a href="./student_login.php"> here</a></span>
+            <span class="right"><h4>If you are a student then login <a href="./student_login.php"> <b>HERE</b></h4></a></span>
         </nav>
         <br><br>
         <div class="center-half">
