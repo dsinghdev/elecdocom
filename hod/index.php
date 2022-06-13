@@ -32,8 +32,9 @@
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
         <br><br><br>
+        <h4><caption class='center'>Approve Students</caption></h4>
         <table class="table">
-        <caption class='center'>Approve Students</caption>
+   
             <tr>
                 <th>ID</th>
                 <th>Name</th>
