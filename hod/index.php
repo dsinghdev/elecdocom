@@ -72,7 +72,7 @@
                 }
             ?>
         </table><br><br>
-        <h4><caption  text-align: center; class='center'>Approve Projects</caption></h4><br>
+        <h4><caption class='centre'>Approve Projects</caption></h4><br>
         <table class="table">
 
             <tr>
