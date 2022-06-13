@@ -16,7 +16,7 @@
     <title>HOME</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="elecdocom.png">
 </head>
 <body>
     <div class="container container-fluid">
