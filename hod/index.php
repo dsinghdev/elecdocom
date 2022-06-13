@@ -71,7 +71,7 @@
                     echo '<tr><td colspan="4"><div class="alert alert-success center" role="alert" >No Student Waiting for Approval</div></td></tr>';
                 }
             ?>
-        </table>
+        </table><br><br>
         <h4><caption  text-align: center; class='center'>Approve Projects</caption></h4><br>
         <table class="table">
 
