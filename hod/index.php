@@ -16,6 +16,7 @@
     <title>HOME</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
     <div class="container container-fluid">
@@ -32,7 +33,7 @@
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
         <br><br><br>
-        <h4 style="color: brown;" class='center'>Approve Students</h4><br>
+        <h4 class='center'>Approve Students</h4><br>
         <table class="table">
    
             <tr>
