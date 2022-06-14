@@ -57,7 +57,7 @@
                     }
                     echo"
                         </span></td>
-                        <td><form method='POST'><input type='submit' value='Dismiss' class='btn btn-info' name='seen${notID}'></form></td>
+                        <td><form method='POST'><input type='submit' value='Delete' class='btn btn-info' name='seen${notID}'></form></td>
                         </tr>
                     ";
                     if(isset($_POST['seen'.$notID])){
