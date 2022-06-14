@@ -2,7 +2,7 @@
     session_start();
     require_once('../server/connection.php');
     $stdID = $_SESSION['id'];
-    $sql = "SELECT `student_FIRST_NAME` , `student_LAST_NAME` FROM `student_record` WHERE `student_ID` = '${stID}'";
+    $sql = "SELECT `student_FIRST_NAME` , `student_LAST_NAME` FROM `student_record` WHERE `student_ID` = '${stdID}'";
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
     $studentName = $data['student_FIRST_NAME'] . " " . $data['student_LAST_NAME'] ;
