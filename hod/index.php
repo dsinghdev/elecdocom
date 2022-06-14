@@ -84,7 +84,7 @@
                 <th>Proposal Status</th>
                 <th>Remarks</th>
                 <th>Student branch</th>
-                <th>Student semester</th>
+                <th>Student semester</th><br>
                 <th>Action</th>
             </tr>
             <?php
