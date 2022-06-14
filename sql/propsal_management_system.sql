@@ -28,6 +28,34 @@ SET time_zone = "+00:00";
 -- Table structure for table `hod_record`
 --
 
+--
+-- Table structure for table `forwarded_record`
+--
+
+CREATE TABLE `forwarded_record` (
+  `forward_id` int(50) NOT NULL,
+  `project_ID` int(50) NOT NULL,
+  `fhod_ID` int(50) DEFAULT '1',
+  `hod_ID` int(50) NOT NULL,
+  `project_TITLE` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `project_date` date NOT NULL,
+  `project_PROFESSOR` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `project_BATCH` int(50) NOT NULL,
+  `project_COURSE` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `project_COMMENT` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `project_STATUS` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `forwarded_record`
+--
+ALTER TABLE `forwarded_record`
+  ADD KEY `forward_id` (`forward_id`,`project_ID`,`fhod_ID`,`hod_ID`,`project_TITLE`,`project_date`,`project_PROFESSOR`,`project_BATCH`,`project_COURSE`,`project_COMMENT`,`project_STATUS`);
+
 CREATE TABLE `hod_record` (
   `hod_ID` int(11) NOT NULL,
   `hod_FIRST_NAME` varchar(50) NOT NULL,
