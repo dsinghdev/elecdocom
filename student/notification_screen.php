@@ -49,7 +49,7 @@
                     $title = $data1['project_TITLE'];
                     echo "
                         <td>${count}</td>
-                        <td><span class='mt-5 alert alert-warning center' role='alert'>`Project ${title}`
+                        <td><span class='mt-5 alert alert-warning center' role='alert'>`Proposal ${title}`
                     ";
                     if($data1['project_STATUS'] == 1){
                         echo "<font color='green'><strong> ACCEPTED</strong></font>";
