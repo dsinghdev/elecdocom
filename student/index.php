@@ -24,7 +24,7 @@
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
             <h1 class='center'>Student Dashboard
             </h1>
-            <small class="right"><b><?php echo "Welcome " . $studentName ?></b></small>
+            <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
         <nav class="right">
             <form action="#" method="post">

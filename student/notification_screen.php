@@ -22,6 +22,7 @@
             <div class="image">
     </div>
             </h1>
+            <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
         <a href="./" class="btn btn-primary mb-3">Go Back</a>
         <?php

@@ -21,6 +21,7 @@
             <h1 class="center">
                 Set a Proposal
             </h1>
+            <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
