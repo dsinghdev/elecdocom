@@ -23,7 +23,6 @@
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
             <h1 class='center'>All Proposals</h1>
-            <!-- <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small> -->
             <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
         <nav class="right">
