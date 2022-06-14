@@ -23,8 +23,6 @@
         <div class="jumbotron mb-5">
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
             <h1 class='center'>Notifications
-            <div class="image">
-    </div>
             </h1>
             <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
