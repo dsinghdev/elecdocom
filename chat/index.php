@@ -13,19 +13,10 @@
     <title>Chat</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image" href="img/favicon.ico">
 </head>
 <body>
     
-    <!-- <h2>Chat Messages</h2><br><br> -->
-    <div class="container container-fluid">
-        <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo"><br><br><br>
-            <h1 class="center">
-                Chat Messages
-            </h1><br>
-            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
-        </div>
+    <h2>Chat Messages</h2>
     <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
     <?php
         $sql = "SELECT * FROM `student_hod_chat` WHERE `student_id` = '${stdID}' AND `hod_id` = '${hodID}' ORDER BY `student_hod_chat`.`message_id` ASC";
