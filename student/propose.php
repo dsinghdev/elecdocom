@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-
+        <img src="img/elecdocom.png" alt="logo"><br><br><br>
             <h3 class="center">
                 Set a Proposal
             </h3>
