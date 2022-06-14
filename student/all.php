@@ -25,6 +25,7 @@
             <h1 class='center'>All Proposals</h1>
             <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
+        <a href="./" class="btn btn-primary mb-3">Go Back</a>
         <nav class="right">
             <form action="#" method="post">
                 <input type="submit" value="Add New Proposal" class="btn btn-outline-success" name="add">
