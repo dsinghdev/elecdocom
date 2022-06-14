@@ -22,9 +22,9 @@
     <div class="container container-fluid">
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
-            <h2 class="center">
+            <h1 class="center">
                 Authority Dashboard
-            </h2>
+            </h1>
   <!-- <div>
       <img src="img/elecdocom.png" alt="logo">
     </div> -->

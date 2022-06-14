@@ -17,11 +17,11 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron mb-5">
-            <img src="img/elecdocom.png" alt="logo">
-            <h2 class='center'>Notifications
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class='center'>Notifications
             <div class="image">
     </div>
-            </h2>
+            </h1>
         </div>
         <a href="./" class="btn btn-primary mb-3">Go Back</a>
         <?php

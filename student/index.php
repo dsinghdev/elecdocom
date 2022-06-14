@@ -21,10 +21,9 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
-            <h3 class='center'>Student Dashboard
-           
-            </h3>
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class='center'>Student Dashboard
+            </h1>
             <small class="right"><b><?php echo "Welcome " . $studentName ?></b></small>
         </div>
         <nav class="right">

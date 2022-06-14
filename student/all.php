@@ -21,9 +21,10 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
-            <h3 class='center'>All Proposals</h3>
-            <small class="right"><b><?php echo "Welcome " . $studentName ?></b></small>
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class='center'>All Proposals</h1>
+            <!-- <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small> -->
+            <small class="right">Welcome<h5><?php echo $studentName ?></h5></small>
         </div>
         <nav class="right">
             <form action="#" method="post">

@@ -18,9 +18,9 @@
     <div class="container">
         <div class="jumbotron">
         <img src="img/elecdocom.png" alt="logo"><br><br><br>
-            <h3 class="center">
+            <h1 class="center">
                 Set a Proposal
-            </h3>
+            </h1>
         </div>
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">

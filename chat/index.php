@@ -21,9 +21,9 @@
     <div class="container container-fluid">
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
-            <h2 class="center">
+            <h1 class="center">
                 Chat Messages
-            </h2><br><br>
+            </h1><br><br>
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
     <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
