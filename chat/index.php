@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    
+    <br><br><br>
     <h2>Chat Messages</h2>
     <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
     <?php
