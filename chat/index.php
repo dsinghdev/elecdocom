@@ -23,7 +23,7 @@
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
             <h1 class="center">
                 Chat Messages
-            </h1><br><br>
+            </h1><br>
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
     <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
