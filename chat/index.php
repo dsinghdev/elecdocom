@@ -18,7 +18,7 @@
 </head>
 <body>
     <br><br><br>
-    <h2>Chat Messages</h2>
+    <h2>Chat Messages</h2><br><br>
     <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
     <?php
         $sql = "SELECT * FROM `student_hod_chat` WHERE `student_id` = '${stdID}' AND `hod_id` = '${hodID}' ORDER BY `student_hod_chat`.`message_id` ASC";
