@@ -16,7 +16,7 @@
     <title>Project Proposal</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="img/favicon.ico">
+    <link rel="icon" type="image" href="img/apple-touch-icon.png">
 </head>
 <body>
     <div class="container">
