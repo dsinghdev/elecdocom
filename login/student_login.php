@@ -12,6 +12,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image" href="img/favicon.ico">
 </head>
 <body>
     <div class="container container-fluid">
