@@ -32,19 +32,16 @@
             <h2 class="center">
                 Proposals forwarded to you
             </h2>
-  <div>
-      <img src="img/elecdocom.png" alt="logo">
-    </div>
-            <small class="right">Welcome <?php echo $hodNAME?> </small>
+            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
 
           
         <br><br><br>
-        
+        <h4 class='center'>Forwarded Projects</h4><br>
         <table class="table">
-        <caption  class='center'>Approve Projects</caption>
+       
             <tr>
                 <th>Proposal title</th>
                 <th>Proposal document</th>
@@ -96,10 +93,15 @@
                         $fhodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
                             echo"
                                 <td>${course}</td>
-                                <td>${fhodNAME}</td>
-                                
-                                <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>
-                                <td><a href= forward.php?hodID=${hodID}&fhodID=${fhodID}&prID=${prID}>Forward</a></td>";
+                                <td>${fhodNAME}</td>";
+                                   
+                            if($status==1&&2){
+                                echo "<td><b><p><font color='green'>SUBMITTED</font></p></b></td>";  
+                               }
+                            else{
+                                echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
+                            }
+                                "<td><a href= forward.php?hodID=${hodID}&fhodID=${fhodID}&prID=${prID}>Forward</a></td>";
                                 ?>
                                 </form>
                                 <?php
