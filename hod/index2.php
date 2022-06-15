@@ -28,7 +28,7 @@
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
             <h2 class="center">
                 Proposals forwarded to you
             </h2>
