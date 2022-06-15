@@ -3,14 +3,9 @@
     session_start();
     $hodID = $_SESSION['id'];
     
-$sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
-    $stID = $_SESSION['id'];
-    $sql = "SELECT `project_ID` , `fhod_ID` , `hod_ID` , `project_TITLE` FROM `forwarded_record` WHERE `project_ID` = '${stID}'";
-    $sql = "SELECT `student_FIRST_NAME` , `student_LAST_NAME` FROM `student_record` WHERE `student_ID` = '${stID}'";
+
    
-    $result = $conn->query($sql);
-    $data = $result->fetch_assoc();
-    $studentName = $data['student_FIRST_NAME'] . " " . $data['student_LAST_NAME'] ;
+    
     $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
@@ -27,6 +22,7 @@ $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_I
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="container container-fluid">
         <div class="jumbotron">
             <img src="img/elecdocom.png" alt="logo"><br><br><br>
@@ -38,7 +34,7 @@ $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_I
         <div>
             </h3>
             
-
+<div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
         <nav class="right">
             <form action="#" method="post">
                 
