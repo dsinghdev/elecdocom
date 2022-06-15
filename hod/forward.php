@@ -42,6 +42,7 @@
             </h1>
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
+        <br><br>
         <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
