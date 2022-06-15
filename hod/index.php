@@ -27,13 +27,16 @@
             </h1>
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
-
-        <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
-        <br><br><br>
         <div>
-            <a href="Forwarded_Proposals.php" class="btn btn-outline-success">Proposals forwarded by you</a>
+        <a href="Forwarded_Proposals.php" class="btn btn-outline-success">Proposals forwarded by you</a>
              <a href="index2.php" class="btn btn-outline-success">Proposals forwarded to you</a>
-        </div>
+        <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
+</div>
+        <br><br><br>
+
+        <!-- <div>
+            
+        </div> -->
         <h4 class='center'>Approve Students</h4><br>
         <table class="table">
    
