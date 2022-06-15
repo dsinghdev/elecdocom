@@ -126,15 +126,16 @@
                                 <td>${course}</td>
                                 <td>${batch}</td>
                                 <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>";
-                                echo"
-                                <td><a class='btn btn-primary' href= forward.php?hodID=${hodID}&stdID=${stdID}&prID=${prID}&title=${title}>Forward </a></td>";
+                               
                             if($status==1&&2){
                                 echo "<td><b><p><font color='green'>SUBMITTED</font></p></b></td>";  
                                }
                             else{
                                 echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
                                
-                            }   
+                            }  
+                            echo"
+                            <td><a class='btn btn-primary' href= forward.php?hodID=${hodID}&stdID=${stdID}&prID=${prID}&title=${title}>Forward </a></td>"; 
                             // echo"
                             //     <td>${course}</td>
                             //     <td>${batch}</td>
