@@ -25,9 +25,6 @@
             <h1 class="center">
                 Authority Dashboard
             </h1>
-  <!-- <div>
-      <img src="img/elecdocom.png" alt="logo">
-    </div> -->
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
 
