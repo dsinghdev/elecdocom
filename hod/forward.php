@@ -3,23 +3,21 @@
     require_once('../server/connection.php');
    
     $hodID = $_SESSION['id'];
+    $prID=$_GET['prID'];
     
-        $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
-        $result = $conn->query($sql);
-   $data = $result->fetch_assoc();    
-    $sql = "SELECT `hod_DEPT` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
+    $sql = "SELECT * FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
     $result = $conn->query($sql);
-   $data = $result->fetch_assoc();
+    $data = $result->fetch_assoc();
+    $hodname=$data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
    $sql = "SELECT * FROM `project_record` WHERE `project_ID` = '${prID}';";
    $result = $conn->query($sql);
    $data = $result->fetch_assoc();
-   $hodNAME = $data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
-   
    $title=$data['project_TITLE'];
    $batch=$data['project_BATCH'];
    $course=$data['project_COURSE'];
-   $file=$data['project_file'];
-     
+$file=$data['project_file'];
+
+echo "<td> <a href = ${file} class='btn btn-info' download>Downlosad</a></td>";
   
 ?>
 
@@ -34,38 +32,36 @@
 </head>
 <body>
     <div class="container">
-    <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo"><br><br><br>
-            <h1 class="center">
-            Forward Proposal
-            </h1>
-            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
+
+            <h3 class="center">
+                Forward Proposal
+            </h3>
+            <?php echo $hodname ?>
         </div>
-        <br><br>
-        <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
+
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
                 <div class="form-group row">    
-                    <input type="text" name="title" class="form-control col-5" value="Title:<?php echo $title?>" >
+                    <input type="text" name="title" readonly class="form-control col-5" placeholder="<?php echo $title?>" >
                     &emsp;&emsp;&emsp;&emsp;
-                    
+                    <input type="number" name="batch" readonly class="form-control col-6" placeholder="Semester:<?php echo $batch?>" >
                 </div>
                 <div class="form-group row">
-                    <input type="text" name="course" class="form-control col-5" value="Course: <?php echo $course?>" >
+                    <input type="text" name="course" readonly class="form-control col-5" placeholder="<?php echo $course?>" >
                     &emsp;&emsp;&emsp;&emsp;
-                    <input type="text" readonly class="form-control col-6" value="Proposal ID: <?php echo $prID?>">
+                    <input type="text" readonly class="form-control col-6" placeholder="Proposal ID: <?php echo $prID?>">
                     
                    
                 </div>
                 <div class="form-group row">
-                    <input type="date" name="pdate" class="form-control col-5" value="<?php echo $pdate?>">
+                    <input type="date" name="pdate" class="form-control col-5" placeholder="<?php echo $pdate?>">
                     &emsp;&emsp;&emsp;&emsp;&emsp;
-                     <input type="text" class="form-control col-6" value="Forwarder ID : <?php echo $hodID?>">
-
+                     <input type="text" name='fhodID' readonly class="form-control col-6" placeholder="Forwarder ID is: <?php echo $hodID?>">
+                   
                  </div>
                 <div class="form-group row">
-                    <label for="hod" class="col-1 col-form-label">Forward to</label>
+                    <label for="hod" class="col-1 col-form-label">Forward tO</label>
                     <select name="hod" class="col-5 form-control">
                         <?php
                             $sql = "SELECT `hod_ID` , `hod_FIRST_NAME` , `hod_LAST_NAME`, `hod_DEPT`FROM `hod_record`;";
@@ -81,7 +77,20 @@
                         ?>  
                     </select>
                     &emsp;&emsp;&emsp;
+                    <?php 
+                     $hodID = $_SESSION['id'];
+                     $prID=$_GET['prID'];
+                     
+                     
+                    $sql = "SELECT * FROM `project_record` WHERE `project_ID` = '${prID}';";
+                    $result = $conn->query($sql);
+                    $data = $result->fetch_assoc();
                     
+                    $file=$data['project_file'];
+                 
+                 echo "<td> <a href = ${file} class='btn btn-info' download>Your File   </a></td>";
+                   
+                     ?>
                     <input type="file" name="fileToUpload" id="fileToUpload" value="<?php echo $file?>" >
                 </div>
                 <input type="submit" name="propose" value="Forward" class="btn btn-outline-primary right">
@@ -96,7 +105,6 @@
 
 <?php
         if(isset($_POST['propose'])){
-
             $title= $_POST['title'];
             $batch= $_POST['batch'];
             $course= $_POST['course'];
