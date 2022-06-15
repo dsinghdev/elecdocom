@@ -11,6 +11,10 @@ $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_I
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
     $studentName = $data['student_FIRST_NAME'] . " " . $data['student_LAST_NAME'] ;
+    $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
+    $result = $conn->query($sql);
+    $data = $result->fetch_assoc();
+    $hodNAME = $data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
 ?>
 
 <!DOCTYPE html>
