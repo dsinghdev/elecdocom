@@ -38,7 +38,7 @@
         <nav class="right">
             <form action="#" method="post">
                 
-                &nbsp
+            
                 <input type="submit" value="Log Out" class="btn btn-outline-danger" name="logout">
             </form><br><br><br>
         </nav>
