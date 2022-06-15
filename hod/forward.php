@@ -4,12 +4,17 @@
    
     $hodID = $_SESSION['id'];
     
-        $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";    
+        $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
+        $result = $conn->query($sql);
+   $data = $result->fetch_assoc();    
     $sql = "SELECT `hod_DEPT` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
+    $result = $conn->query($sql);
+   $data = $result->fetch_assoc();
    $sql = "SELECT * FROM `project_record` WHERE `project_ID` = '${prID}';";
-   $hodNAME = $data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
    $result = $conn->query($sql);
    $data = $result->fetch_assoc();
+   $hodNAME = $data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
+   
    $title=$data['project_TITLE'];
    $batch=$data['project_BATCH'];
    $course=$data['project_COURSE'];
