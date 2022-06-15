@@ -101,7 +101,7 @@
                             else{
                                 echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
                             }
-                                echo "<td><a href= forward.php?hodID=${hodID}&fhodID=${fhodID}&prID=${prID}>Forward</a></td>";
+                                echo "<td><a href= forward.php?hodID=${hodID}&fhodID=${fhodID}&prID=${prID} class='btn btn-primary>Forward</a></td>";
                                 ?>
                                 </form>
                                 <?php
