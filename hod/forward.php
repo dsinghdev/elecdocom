@@ -29,13 +29,14 @@
 </head>
 <body>
     <div class="container">
+    <div class="container container-fluid">
         <div class="jumbotron">
-
-            <h3 class="center">
-                Forward Proposal
-            </h3>
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class="center">
+            Forward Proposal
+            </h1>
+            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
-
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
                 <div class="form-group row">    
