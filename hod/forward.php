@@ -62,7 +62,7 @@ $file=$data['project_file'];
                    
                  </div>
                 <div class="form-group row">
-                    <label for="hod" class="col-1 col-form-label">Forward tO</label>
+                    <label for="hod" class="col-1 col-form-label">Forward to</label>
                     <select name="hod" class="col-5 form-control">
                         <?php
                             $sql = "SELECT `hod_ID` , `hod_FIRST_NAME` , `hod_LAST_NAME`, `hod_DEPT`FROM `hod_record`;";
@@ -92,7 +92,7 @@ $file=$data['project_file'];
                  echo "<td> <a href = ${file} class='btn btn-info' download>Your File   </a></td>";
                    
                      ?>
-                    <input type="file" name="fileToUpload" id="fileToUpload" value="<?php echo $file?>" >
+                 
                 </div>
                 <input type="submit" name="propose" value="Forward" class="btn btn-outline-primary right">
             </form>
