@@ -89,7 +89,10 @@
                 <th>Remarks</th>
                 <th>Student branch</th>
                 <th>Student semester</th>
-                <th>      Action     </th>
+                <th></th>
+                
+                <th>Action</th>
+                <th></th>
             </tr>
             <?php
                 $sql = "SELECT * FROM `project_record` WHERE `hod_ID` = '${hodID}';";
