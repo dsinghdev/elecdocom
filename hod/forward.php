@@ -17,7 +17,7 @@
    $course=$data['project_COURSE'];
 $file=$data['project_file'];
 
-echo "<td> <a href = ${file} class='btn btn-info' download>Downlosad</a></td>";
+
   
 ?>
 
@@ -31,14 +31,15 @@ echo "<td> <a href = ${file} class='btn btn-info' download>Downlosad</a></td>";
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+<div class="container container-fluid">
         <div class="jumbotron">
-
-            <h3 class="center">
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class="center">
                 Forward Proposal
-            </h3>
-            <?php echo $hodname ?>
+            </h1>
+            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
+        <div>
 
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
