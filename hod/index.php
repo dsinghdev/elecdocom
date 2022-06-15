@@ -15,31 +15,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" h</head>
+<body>
+      <link rel="icon" type="image" href="img/apple-touch-icon.png">
 </head>
 <body>
     <div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
-            <h2 class="center">
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class="center">
                 Authority Dashboard
-            </h2>
-  <div>
-      <img src="img/elecdocom.png" alt="logo">
-    </div>
-            <small class="right">Welcome <?php echo $hodNAME?> </small>
+            </h1>
+            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
 
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
-
-          
         <br><br><br>
         <div>
             <a href="Forwarded_Proposals.php" class="btn btn-outline-success">Proposals forwarded by you</a>
              <a href="index2.php" class="btn btn-outline-success">Proposals forwarded to you</a>
         </div>
+        <h4 class='center'>Approve Students</h4><br>
         <table class="table">
-        <caption  class='center'>Approve Projects</caption>
+   
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Approve?</th>
+            </tr>
+
+            <?php
+                $sql = "SELECT * FROM `student_record` WHERE `status` = 0";
+                $result = $conn->query($sql);
+                $rows = $result->num_rows;
+                if($rows >= 1){
+                    while($data = $result->fetch_assoc()){
+                        $id = $data['student_ID'];
+                        $name = $data['student_FIRST_NAME'] . " " . $data['student_LAST_NAME'];
+                        $email = $data['student_EMAIL'];
+                        echo"
+                        <form method='post'>
+                            <tr>
+                                <td><fieldset disabled><input type='number' name='field$id' value=${id} id='disabledTextInput' class='form-control'></fieldset></td>
+                                <td>${name}</td>
+                                <td>${email}</td>
+                                <td><input type='submit' name='approve${id}' class='btn btn-outline-success' value='Approve This'></td>
+                            </tr>
+                        </form>
+                        ";
+                        if(isset($_POST['approve'.$id])){
+                            $sql = "UPDATE `student_record` SET `status` = '1' WHERE `student_record`.`student_ID` = '${id}';";
+                            $result = $conn->query($sql);
+                            header('Location: ?');
+                        }
+                    }
+                }else{
+                    echo '<tr><td colspan="4"><div class="alert alert-success center" role="alert" >No Student Waiting for Approval</div></td></tr>';
+                }
+            ?>
+        </table><br><br>
+        <h4 class='center'>Approve Projects</h4><br>
+        <table class="table">
+
             <tr>
                 <th>Proposal title</th>
                 <th>Proposal document</th>
@@ -48,7 +86,7 @@
                 <th>Proposal Status</th>
                 <th>Remarks</th>
                 <th>Student branch</th>
-                <th>Student semester</th>
+                <th>Student semester</th><br>
                 <th>Action</th>
             </tr>
             <?php
@@ -84,14 +122,36 @@
                                 <option value='1'>ACCEPT</option>
                                 <option value='2'>REJECT</option>
                             </select></td>
-                            <td><input type='text' name='comment${prID}'  placeholder='Leave Remarks' value='${comment}' required></td>
+                            <td><input type='text' name='comment${prID}' placeholder='Leave Remarks' value='${comment}' required></td>
                             ";
                             echo"
                                 <td>${course}</td>
                                 <td>${batch}</td>
-                                <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>
-                                <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>
-                            <td><button><a href= forward.php?hodID=${hodID}&stdID=${stdID}&prID=${prID}&title={title}>Forward </a></button></td>";
+                                <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>";
+                               
+                            if($status==1&&2){
+                                echo "<td><b><p><font color='green'>SUBMITTED</font></p></b></td>";  
+                               }
+                            else{
+                                echo "<td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
+                               
+                            }  
+                            echo"
+                            <td><a class='btn btn-primary' href= forward.php?hodID=${hodID}&stdID=${stdID}&prID=${prID}&title=${title}>Forward </a></td>"; 
+                            // echo"
+                            //     <td>${course}</td>
+                            //     <td>${batch}</td>
+                            //     <td><a href='./../chat/index.php?hodID=${hodID}&stdID=${stdID}' class='btn btn-primary'>Chat</a></td>
+                            //     <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>";
+
+                                
+                              
+                                
+s='btn btn-primary'></td>";
+
+                                
+                              
+                                
                                 ?>
                                 </form>
                                 <?php
