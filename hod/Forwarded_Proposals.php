@@ -60,7 +60,7 @@
                     while($data = $result->fetch_assoc()){
                         $title = $data['project_TITLE'];
                         $pdate = $data['project_date'];
-                        $hodID = $data['hod_ID'];
+                        $fhodID = $data['fhod_ID'];
                         $professor = $data['project_PROFESSOR'];
                         $status = $data['project_STATUS'];
                         $comment = $data['project_COMMENT'];
@@ -71,13 +71,13 @@
                             <td>${title}</td>
                             <td>${pdate}</td>
                         ";
-                        $hodNAME = '';
-                        $sql1 = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
+                        $fhodNAME = '';
+                        $sql1 = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${fhodID}'";
                         $result1 = $conn->query($sql1);
                         $data1 = $result1->fetch_assoc();
-                        $hodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
+                        $fhodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
                         echo"
-                            <td>${hodNAME}</td>
+                            <td>${fhodNAME}</td>
                             
                         ";
                         if($status == 0){
