@@ -77,7 +77,7 @@
                         $data1 = $result1->fetch_assoc();
                         $hodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
                         echo"
-                            <td>${studentName}</td>
+                            <td>${hodNAME}</td>
                             
                         ";
                         if($status == 0){
