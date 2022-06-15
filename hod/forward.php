@@ -17,7 +17,7 @@
    $course=$data['project_COURSE'];
 $file=$data['project_file'];
 
-echo "<td> <a href = ${file} class='btn btn-info' download>Downlosad</a></td>";
+
   
 ?>
 
@@ -43,14 +43,14 @@ echo "<td> <a href = ${file} class='btn btn-info' download>Downlosad</a></td>";
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
                 <div class="form-group row">    
-                    <input type="text" name="title" readonly class="form-control col-5" placeholder="<?php echo $title?>" >
+                    <input type="text" name="title" readonly class="form-control col-5" value="<?php echo $title?>" >
                     &emsp;&emsp;&emsp;&emsp;
-                    <input type="number" name="batch" readonly class="form-control col-6" placeholder="Semester:<?php echo $batch?>" >
+                    <input type="number" name="batch" readonly class="form-control col-6" value="Semester:<?php echo $batch?>" >
                 </div>
                 <div class="form-group row">
-                    <input type="text" name="course" readonly class="form-control col-5" placeholder="<?php echo $course?>" >
+                    <input type="text" name="course" readonly class="form-control col-5" value="<?php echo $course?>" >
                     &emsp;&emsp;&emsp;&emsp;
-                    <input type="text" readonly class="form-control col-6" placeholder="Proposal ID: <?php echo $prID?>">
+                    <input type="text" readonly class="form-control col-6" value="Proposal ID: <?php echo $prID?>">
                     
                    
                 </div>
@@ -61,7 +61,7 @@ echo "<td> <a href = ${file} class='btn btn-info' download>Downlosad</a></td>";
                    
                  </div>
                 <div class="form-group row">
-                    <label for="hod" class="col-1 col-form-label">Forward tO</label>
+                    <label for="hod" class="col-1 col-form-label">Forward to</label>
                     <select name="hod" class="col-5 form-control">
                         <?php
                             $sql = "SELECT `hod_ID` , `hod_FIRST_NAME` , `hod_LAST_NAME`, `hod_DEPT`FROM `hod_record`;";

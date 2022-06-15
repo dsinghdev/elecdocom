@@ -15,14 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
-<<<<<<< HEAD
     <link rel="stylesheet" h</head>
 <body>
       <link rel="icon" type="image" href="img/apple-touch-icon.png">
-=======
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="img/apple-touch-icon.png">
->>>>>>> parent of 7744439 (update)
 </head>
 <body>
     <div class="container container-fluid">
@@ -152,14 +147,11 @@
                                 
                               
                                 
-<<<<<<< HEAD
 s='btn btn-primary'></td>";
 
                                 
                               
                                 
-=======
->>>>>>> parent of 7744439 (update)
                                 ?>
                                 </form>
                                 <?php
