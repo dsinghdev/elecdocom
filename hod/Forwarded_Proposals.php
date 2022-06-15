@@ -34,7 +34,7 @@
         <div>
             </h3>
             
-<div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
+<div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div>
         <nav class="right">
             <form action="#" method="post">
                 
