@@ -23,13 +23,15 @@ $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_I
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container container-fluid">
+<div class="container container-fluid">
         <div class="jumbotron">
-            <img src="img/elecdocom.png" alt="logo">
-            <h3 class='center'>Forwarded Proposals
-            <div>
-      
-    </div>
+            <img src="img/elecdocom.png" alt="logo"><br><br><br>
+            <h1 class="center">
+                Forwarded Proposal
+            </h1>
+            <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
+        </div>
+        <div>
             </h3>
             
 
