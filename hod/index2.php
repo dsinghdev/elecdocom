@@ -51,7 +51,8 @@
                 <th>Proposal date</th>
                 <th>Proposal Status</th>
                 <th>Remarks</th>
-                <th>Forwarded by</th>
+                <th>Student branch</th>
+                <th>Forwarder by</th>
                 <th>Action</th>
             </tr>
             <?php
@@ -94,7 +95,7 @@
                         $data1 = $result1->fetch_assoc();
                         $fhodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
                             echo"
-                                
+                                <td>${course}</td>
                                 <td>${fhodNAME}</td>
                                 
                                 <td><input type='submit' name='update${prID}' class='btn btn-primary'></td>
