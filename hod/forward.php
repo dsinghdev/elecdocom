@@ -8,7 +8,7 @@
     $sql = "SELECT * FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
-    $hodname=$data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
+    $hodNAME=$data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
    $sql = "SELECT * FROM `project_record` WHERE `project_ID` = '${prID}';";
    $result = $conn->query($sql);
    $data = $result->fetch_assoc();
@@ -40,7 +40,7 @@ $file=$data['project_file'];
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
         <div>
-
+        <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div><br><br>
         <section class="form">
             <form action="#" method="post" enctype="multipart/form-data">
                 <div class="form-group row">    
