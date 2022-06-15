@@ -32,7 +32,7 @@
              <a href="index2.php" class="btn btn-outline-success">Proposals forwarded to you</a>
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
 </div>
-        <br><br><br>
+        <br>
 
         <!-- <div>
             
@@ -88,8 +88,8 @@
                 <th>Proposal Status</th>
                 <th>Remarks</th>
                 <th>Student branch</th>
-                <th>Student semester</th><br>
-                <th>Action</th>
+                <th>Student semester</th>
+                <th>      Action     </th>
             </tr>
             <?php
                 $sql = "SELECT * FROM `project_record` WHERE `hod_ID` = '${hodID}';";
