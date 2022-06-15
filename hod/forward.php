@@ -58,7 +58,7 @@ $file=$data['project_file'];
                 <div class="form-group row">
                     <input type="date" name="pdate" class="form-control col-5" value="<?php echo $pdate?>">
                     &emsp;&emsp;&emsp;&emsp;&emsp;
-                     <input type="text" name='fhodID' readonly class="form-control col-6" place="Forwarder ID is: <?php echo $hodID?>">
+                     <input type="text" name='fhodID' readonly class="form-control col-6" value="Forwarder ID is: <?php echo $hodID?>">
                  </div>
                 <div class="form-group row">
                     <label for="hod" class="col-1 col-form-label">Forward tO</label>
