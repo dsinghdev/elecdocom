@@ -3,13 +3,14 @@
     session_start();
     $hodID = $_SESSION['id'];
     
-
+$sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
+    $stID = $_SESSION['id'];
+    $sql = "SELECT `project_ID` , `fhod_ID` , `hod_ID` , `project_TITLE` FROM `forwarded_record` WHERE `project_ID` = '${stID}'";
+    $sql = "SELECT `student_FIRST_NAME` , `student_LAST_NAME` FROM `student_record` WHERE `student_ID` = '${stID}'";
    
-    
-    $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
-    $hodNAME = $data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
+    $studentName = $data['student_FIRST_NAME'] . " " . $data['student_LAST_NAME'] ;
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +61,7 @@
                     while($data = $result->fetch_assoc()){
                         $title = $data['project_TITLE'];
                         $pdate = $data['project_date'];
-                        $fhodID = $data['fhod_ID'];
+                        $hodID = $data['hod_ID'];
                         $professor = $data['project_PROFESSOR'];
                         $status = $data['project_STATUS'];
                         $comment = $data['project_COMMENT'];
@@ -72,7 +73,7 @@
                             <td>${pdate}</td>
                         ";
                         $fhodNAME = '';
-                        $sql1 = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${fhodID}'";
+                        $sql1 = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
                         $result1 = $conn->query($sql1);
                         $data1 = $result1->fetch_assoc();
                         $fhodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];

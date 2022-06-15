@@ -48,8 +48,7 @@
                 <th>Proposal date</th>
                 <th>Proposal Status</th>
                 <th>Remarks</th>
-                <th>Student branch</th>
-                <th>Forwarder by</th>
+                <th>Forwarded by</th>
                 <th>Action</th>
             </tr>
             <?php
