@@ -2,18 +2,10 @@
     session_start();
     require_once('../server/connection.php');
     $hodID = $_SESSION['id'];
- 
-
-    
-    
     $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
-   
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
-    
     $hodNAME = $data['hod_FIRST_NAME'] . " " . $data['hod_LAST_NAME'];
-
-
 ?>
 
 <!DOCTYPE html>
@@ -34,20 +26,18 @@
             </h2>
             <small class="right">Welcome <h5><?php echo $hodNAME?></h5> </small>
         </div>
-
+        <div class="left"><a href="../" class='btn btn-primary'>Go Back</a></div>
         <nav class='right'><form action="#" method="post"><input type="submit" value="Log Out" name="logout" class="btn btn-outline-danger"></form></nav>
-
-          
         <br><br><br>
         <h4 class='center'>Forwarded Projects</h4><br>
         <table class="table">
-       
             <tr>
                 <th>Proposal title</th>
                 <th>Proposal document</th>
                 <th>Proposal date</th>
                 <th>Proposal Status</th>
                 <th>Remarks</th>
+                <th>Branch</th>
                 <th>Forwarded by</th>
                 <th>Action</th>
             </tr>
@@ -62,15 +52,13 @@
                         $pdate = $data['project_date'];
                         $hodID = $data['hod_ID'];
                         $fhodID = $data['fhod_ID'];
-                        $professor = $data['project_PROFESSOR'];
+                        
                         $status = $data['project_STATUS'];
                         $comment = $data['project_COMMENT'];
                         $course = $data['project_COURSE'];
                         $batch = $data['project_BATCH'];
                         $file = $data['project_file'];
-
                         echo"
-
                         <tr>
                             <td>${title}</td> 
                             <td> <a href = ${file} class='btn btn-info' download>Download</a></td>";
@@ -107,12 +95,10 @@
                                 if(isset($_POST['update'.$prID])){
                                     $status = $_POST['status'.$prID];
                                     $comment = $_POST['comment'.$prID];
-                                    $sql = "UPDATE `forwarded_record` SET `project_PROFESSOR` = '${professor}', `project_STATUS` = '${status}' , `project_COMMENT` = '${comment}' WHERE `forwarded_record`.`project_ID` = ${prID};";
+                                    $sql = "UPDATE `forwarded_record` SET `project_STATUS` = '${status}' , `project_COMMENT` = '${comment}' WHERE `forwarded_record`.`project_ID` = ${prID};";
                                     $conn->query($sql);
-                                   
                                 }
                         echo "</tr>";
-
                     }
                 }else{
                     echo '<tr><td colspan="8"><div class="alert alert-success center" role="alert" >No forwards</div></td></tr>';
