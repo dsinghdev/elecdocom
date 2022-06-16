@@ -244,7 +244,7 @@ ALTER TABLE `student_record`
 -- AUTO_INCREMENT for dumped tables
 --
 
---AUTO_INCREMENT for table `forwarded_record`
+-- AUTO_INCREMENT for table `forwarded_record`
 ALTER TABLE `forwarded_record`
   MODIFY `forward_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
