@@ -15,7 +15,7 @@
    $title=$data['project_TITLE'];
    $batch=$data['project_BATCH'];
    $course=$data['project_COURSE'];
-$file=$data['project_file'];
+   $file=$data['project_file'];
 
 
   
@@ -46,7 +46,7 @@ $file=$data['project_file'];
                 <div class="form-group row">    
                     <input type="text" name="title" readonly class="form-control col-5" value="<?php echo $title?>" >
                     &emsp;&emsp;&emsp;&emsp;
-                    <input type="number" name="batch" readonly class="form-control col-6" value="Semester:<?php echo $batch?>" >
+                    <input type="number" name="batch" readonly class="form-control col-5" value="Semester:<?php echo $batch?>" >
                 </div>
                 <div class="form-group row">
                     <input type="text" name="course" readonly class="form-control col-5" value="<?php echo $course?>" >
