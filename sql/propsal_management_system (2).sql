@@ -45,8 +45,6 @@ CREATE TABLE `forwarded_record` (
 -- Dumping data for table `forwarded_record`
 --
 
-INSERT INTO `forwarded_record` (`forward_id`, `project_ID`, `fhod_ID`, `hod_ID`, `project_TITLE`, `project_date`, `project_BATCH`, `project_COURSE`, `project_COMMENT`, `project_STATUS`, `project_file`) VALUES
-(1, 5, 1, 2, 'Online Project Proposal', '2022-06-14', 3, 'Computer Science', 'Share the roadmap ', 1, '');
 
 -- --------------------------------------------------------
 
@@ -140,11 +138,7 @@ CREATE TABLE `project_record` (
 -- Dumping data for table `project_record`
 --
 
-INSERT INTO `project_record` (`project_ID`, `student_ID`, `hod_ID`, `project_TITLE`, `project_date`, `project_PROFESSOR`, `project_BATCH`, `project_COURSE`, `project_COMMENT`, `project_STATUS`, `project_file`) VALUES
-(5, 1, 1, 'Online Project Proposal', '2009-06-20', ' ', 3, 'Computer Science', ' Share the roadmap', 1, '../server/uploads/5ef73832382d16.62240900.pdf'),
-(6, 1, 1, 'Technical fest ', '2022-06-02', 'N/A', 6, 'Computer Science ', 'Share your plan', 1, '../server/uploads/629ef1905d37a1.36791273.txt'),
-(7, 1, 5, 'food fest ', '2022-06-12', 'NA', 5, 'mechanical engineering ', 'needs improvement', 1, '../server/uploads/62a44625b3c946.11886649.txt'),
-(8, 1, 1, 'abv', '2022-06-12', 'a', 6, 'CSE', 's', 1, '../server/uploads/62a5a5743f35a8.86621830.txt');
+
 
 -- --------------------------------------------------------
 
@@ -212,7 +206,7 @@ INSERT INTO `student_record` (`student_ID`, `student_EMAIL`, `student_FIRST_NAME
 -- Indexes for table `forwarded_record`
 --
 ALTER TABLE `forwarded_record`
-  ADD KEY `forward_id` (`forward_id`,`project_ID`,`fhod_ID`,`hod_ID`,`project_TITLE`,`project_date`,`project_PROFESSOR`,`project_BATCH`,`project_COURSE`,`project_COMMENT`,`project_STATUS`);
+  ADD KEY `forward_id` (`forward_id`,`project_ID`,`fhod_ID`,`hod_ID`,`project_TITLE`,`project_date`,`project_BATCH`,`project_COURSE`,`project_COMMENT`,`project_STATUS`);
 
 --
 -- Indexes for table `hod_record`
@@ -270,7 +264,7 @@ ALTER TABLE `project_notification`
 -- AUTO_INCREMENT for table `project_record`
 --
 ALTER TABLE `project_record`
-  MODIFY `project_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `project_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT for table `student_hod_chat`
