@@ -54,7 +54,7 @@ $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_I
                 <th>Proposer Semester</th>
                            </tr>
             <?php
-                $sql = "SELECT * FROM `forwarded_record` WHERE `hod_ID` = '${hodID}';";
+                $sql = "SELECT * FROM `forwarded_record` WHERE `fhod_ID` = '${hodID}';";
                 $result = $conn->query($sql);
                 $rows = $result->num_rows;
                 if($rows >= 1){
@@ -72,13 +72,13 @@ $sql = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_I
                             <td>${title}</td>
                             <td>${pdate}</td>
                         ";
-                        $fhodNAME = '';
+                        $hodNAME = '';
                         $sql1 = "SELECT `hod_FIRST_NAME` , `hod_LAST_NAME` FROM `hod_record` WHERE `hod_ID` = '${hodID}'";
                         $result1 = $conn->query($sql1);
                         $data1 = $result1->fetch_assoc();
-                        $fhodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
+                        $hodNAME = $data1['hod_FIRST_NAME'] . ' ' . $data1['hod_LAST_NAME'];
                         echo"
-                            <td>${fhodNAME}</td>
+                            <td>${hodNAME}</td>
                             
                         ";
                         if($status == 0){
