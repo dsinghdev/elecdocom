@@ -135,7 +135,8 @@
             //             $fileDestination = '../server/uploads/'.$fileNameNew;
             //             move_uploaded_file($fileTempName,$fileDestination);
             //             $document = $fileDestination;
-            $sql = "INSERT INTO `forwarded_record` (`project_ID`, `fhod_ID`, `hod_ID`, `project_TITLE`, `project_date`, `project_BATCH`, `project_COURSE`, `project_STATUS`, `project_file`) VALUES ('${prID}', '${fhodID}', '${hod}', '${title}', '${pdate}', '${batch}', '${course}','0', '${file}')";
+            $sql = "INSERT INTO `forwarded_record` (`project_ID`, fhod_ID, `hod_ID`, `project_TITLE`, `project_date`, `project_BATCH`, `project_COURSE`, `project_STATUS`, `project_file`) 
+            VALUES ('${prID}', '${fhodID}', '${hod}', '${title}', '${pdate}', '${batch}', '${course}','0', '${file}')";
                         if($conn->query($sql) === true){
                             header("Location: ./");
                         }else{
